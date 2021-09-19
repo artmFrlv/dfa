@@ -1,0 +1,95 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 84px;
+}
+
+.logo {
+    margin-left: 37px;
+    margin-top: 22px;
+    height: 31px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 22px;
+    margin-left: 130px;
+    margin-right: 60px;
+    margin-top: 29px;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.auth:hover .exit {
+    color: white;
+}
+
+.auth:hover .secondLayer {
+    opacity: 0;
+}
+
+.exit {
+    margin-right: 13px;
+    justify-self: flex-end;
+    color: #8B97AE;
+}
+
+.event {
+    color: #8B97AE;
+}
+
+.event:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+    position: relative;
+}
+
+.secondLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width: 620px) {
+    .content {
+        margin-left: 20px;
+        margin-right: 15px;
+    }
+
+    .logo {
+        margin-left: 15px;
+    }
+
+    .exit {
+        margin-right: 10px;
+    }
+
+    .header {
+        position: fixed;
+        background-color: #192233;
+        z-index: 100;
+        left: 0;
+        top: 0;
+    }
+}

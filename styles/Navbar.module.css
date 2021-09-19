@@ -1,0 +1,41 @@
+.navbar {
+    width: 240px;
+    height: 100%;
+}
+
+.button {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 84px;
+    width: 45px;
+    height: 45px;
+    background-color: #192233;
+    z-index: 1000;
+    border-radius: 0 0 50% 50%;
+}
+
+.menu {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+@media (max-width: 620px) {
+    .navbar {
+        display: none;
+    }
+
+    .button {
+        display: block;
+    }
+
+    .navbar.active {
+        display: block;
+        position: fixed;
+        width: 100%;
+        top: 84px;
+        left: 0;
+        background-color: #192233;
+        z-index: 100;
+    }
+}

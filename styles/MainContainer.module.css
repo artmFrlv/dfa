@@ -1,0 +1,28 @@
+.mainContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.layout {
+    background-color: #212C42;
+    width: calc(100% - 30px - 240px);
+    min-height: calc(100vh - 84px);
+    border-radius: 50px 50px 0 0;
+}
+
+@media (max-width: 620px) {
+    .layout {
+        width: 100%;
+        border-radius: 0 0 0 0;
+    }
+
+    .mainContainer {
+        top: 84px;
+    }
+}

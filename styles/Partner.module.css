@@ -1,0 +1,13 @@
+.partnerInfo {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.partnerUsername {
+    margin-left: 5px;
+    font-size: 8px;
+    line-height: 10px;
+    align-self: center;
+    color: rgba(255, 255, 255, 0.5);
+}

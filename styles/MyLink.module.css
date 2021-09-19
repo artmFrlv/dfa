@@ -1,0 +1,64 @@
+.linkContainer {
+    margin-bottom: 28px;
+    cursor: pointer;
+}
+
+.linkContainer:hover .title {
+    color: white;
+}
+
+.linkContainer:hover .chosen {
+    background-color: #6781F7;
+}
+
+.linkContainer:hover.active {
+    cursor: default;
+}
+
+.linkContainer:hover .secondLayer {
+    opacity: 0;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    margin-left: 20px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #8B97AE;
+    align-self: center;
+}
+
+.title.active {
+    color: white;
+}
+
+.icon {
+    position: relative;
+    margin-left: 26px;
+    width: 25px;
+    height: 25px;
+}
+
+.chosen {
+    width: 4px;
+    margin-left: 2px;
+    background-color: #192233;
+}
+
+.chosen.active {
+    background-color: #6781F7;
+}
+
+.secondLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.secondLayer.active {
+    opacity: 0;
+}
