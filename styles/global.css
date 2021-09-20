@@ -3,8 +3,23 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
+    font-family: "PT-Root";
 }
 
 .body {
     background-color: #192233;
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("/fonts/Roboto-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PT-Root";
+    src: url("/fonts/PT-Root.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }

@@ -6,7 +6,7 @@ import {partnerObject} from "../types/partner";
 const Partner = ({partner}: partnerObject) => {
     return (
         <div className={styles.partnerInfo}>
-            <Image src={partner.photoUrl} width={25} height={25}/>
+            <Image className={styles.avatar} src={partner.photoUrl} width={25} height={25}/>
             <div className={styles.partnerUsername}>
                 {partner.username}
             </div>

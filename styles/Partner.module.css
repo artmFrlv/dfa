@@ -4,10 +4,23 @@
     margin-bottom: 10px;
 }
 
+.avatar {
+    opacity: 0.5;
+    border: 1px solid #DCE0F4;
+}
+
+.partnerInfo:hover .avatar {
+    opacity: 1;
+}
+
 .partnerUsername {
     margin-left: 5px;
     font-size: 8px;
     line-height: 10px;
     align-self: center;
     color: rgba(255, 255, 255, 0.5);
+}
+
+.partnerInfo:hover .partnerUsername{
+    color: white;
 }

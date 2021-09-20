@@ -16,7 +16,7 @@ const PartnerList = ({partnerList, payoutRate}) => {
                 </div>
             </div>
             <div className={styles.partners}>
-                {partnerList.slice(0, 4).map(partner =>
+                {partnerList.map(partner =>
                     <Partner key={partner.id} partner={partner}/>
                 )}
             </div>
